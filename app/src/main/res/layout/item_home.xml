@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   android:layout_margin="8dp"
+    android:gravity="center"
+    >
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="10dp"
+        android:elevation="20dp"
+        android:clickable="true"
+
+
+        >
+        <RelativeLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/WhiteHigh"
+
+            >
+
+            <ImageView
+                android:id="@+id/iv_recepeImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:layout_above="@id/tv_title"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:padding="10dp"
+                android:background="@color/Secondary"
+                android:text="Chinese"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/WhiteLow"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                />
+
+
+
+
+        </RelativeLayout>
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/ll_main"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        android:background="@color/WhiteHigh"-->
+<!--        android:gravity="center"-->
+
+<!--        >-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_title"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="18sp"-->
+<!--            android:text="Puding"-->
+<!--            android:textStyle="bold"-->
+<!--            android:fontFamily="@font/poppins_medium"-->
+<!--            android:gravity="center"-->
+<!--            android:textColor="@color/Secondary"-->
+<!--            />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_recepesize"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="14sp"-->
+<!--            android:fontFamily="@font/poppins_medium"-->
+<!--            android:text="31 Resep"-->
+<!--            android:gravity="center"-->
+<!--            android:textColor="@color/Secondary"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--    </LinearLayout>-->
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
